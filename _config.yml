@@ -19,7 +19,7 @@ ios_store_link: "#"
 android_store_link: "#"
 email: your-email@domain.com
 description: > # a simple web app launch site built using tachyons
-baseurl: "/tachyons-launchr/" # the subpath of your site, e.g. /blog
+baseurl: "/tachyons-launchr" # the subpath of your site, e.g. /blog
 url: "http://www.blairanderson.co" # the base hostname & protocol for your site, e.g. http://example.com
 
 social-icons:
