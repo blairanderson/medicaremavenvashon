@@ -1,0 +1,15 @@
+<section id="contact" class="vh-75 w-100 dt contact bg-green">
+  <div class="dtc v-mid">
+    <h2 class="tc near-white f1">We {% include icons/heart.svg %} new friends!</h2>
+    <ul class="list-social tc ma0 pa0">
+      {% for icon in site.social-icons %}
+      <li class="social-{{icon.class}} mr3 link dib h2">
+        <a href="{{ icon.url }}" target="_blank">
+          {% include {{ icon.class | prepend: 'icons/social/' | append: '.svg' }} %}
+          <span class="clip">{{ icon.title }}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
