@@ -13,11 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Tachyons Templates
+title: Launchr - Free Web App Landing Page Theme
 launchr: Launchr - Landing page to help you showcase your new beautiful, shiny, mobile app!
 ios_store_link: "#"
 android_store_link: "#"
-email: your-email@domain.com
+email: feedback@tachyonstemplates.com
+download-link: "http://www.tachyonstemplates.com/template-overviews/tachyons-launchr/"
 description: > # a simple web app launch site built using tachyons
 baseurl: "/tachyons-launchr" # the subpath of your site, e.g. /blog
 url: "http://www.blairanderson.co" # the base hostname & protocol for your site, e.g. http://example.com
