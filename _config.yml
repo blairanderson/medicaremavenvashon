@@ -18,7 +18,7 @@ launchr: Launchr - Landing page to help you showcase your new beautiful, shiny, 
 ios_store_link: "#"
 android_store_link: "#"
 email: feedback@tachyonstemplates.com
-download-link: "http://www.tachyonstemplates.com/template-overviews/tachyons-launchr/"
+download-link: "https://www.tachyonstemplates.com/template-overviews/tachyons-launchr/"
 description: > # a simple web app launch site built using tachyons
 baseurl: "/tachyons-launchr" # the subpath of your site, e.g. /blog
 url: "http://www.blairanderson.co" # the base hostname & protocol for your site, e.g. http://example.com
@@ -32,7 +32,6 @@ social-icons:
    class: twitter
 # Build settings
 markdown: kramdown
-theme: tachyons-blocks
 gems:
   - jekyll-feed
 
