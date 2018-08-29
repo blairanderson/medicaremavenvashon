@@ -12,19 +12,16 @@
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
+# we want to look like this http://www.kenwilliamschfc.com/
 # in the templates via {{ site.myvariable }}.
-title: Web Launchr - FREE Tachyons HTML Web Landing Page Template
-brand_name: Web Launchr
+title: Medicare Maven Vashon
+brand_name: MedicareMavenVashon
 header:
-  title: Web Launchr Landing Page
-  subtitle: Free Template to help showcase beautiful, shiny, web app!
-ios_store_link: "#"
-android_store_link: "#"
-email: feedback@tachyonstemplates.com
-download-link: "https://www.tachyonstemplates.com/template-overviews/tachyons-web-launchr/"
+  title: Medicare Maven
+  subtitle: Simplified Medicare Supplemental Insurance!
+email: leeann@safesecuremoney.com
 description: > # a simple web app launch site built using tachyons
-baseurl: "/tachyons-web-launchr" # the subpath of your site, e.g. /blog
-url: "http://www.blairanderson.co" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.medicaremavenvashon.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 social-icons:
  - title: Facebook
