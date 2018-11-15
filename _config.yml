@@ -17,9 +17,12 @@
 title: Medicare Maven Vashon
 brand_name: MedicareMavenVashon
 header:
-  title: Medicare Maven
-  subtitle: Simplified Medicare Supplemental Insurance!
-email: leeann@safesecuremoney.com
+  title: Vashon Island Medicare Maven
+  subtitle: Medicare Supplemental Insurance made Simple!
+mailto: "leeann@safesecuremoney.com"
+mailto_url: "mailto:leeann@safesecuremoney.com?subject=Seeking+MedicareMavenVashon"
+phone: "(206) 567-4600"
+phone_url: "2065674600"
 description: > # a simple web app launch site built using tachyons
 url: "https://www.medicaremavenvashon.com" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -27,9 +30,6 @@ social-icons:
  - title: Facebook
    url: https://facebook.com/example
    class: facebook
- - title: Twitter
-   url: https://twitter.com/blairanderson
-   class: twitter
 # Build settings
 markdown: kramdown
 gems:

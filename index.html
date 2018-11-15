@@ -6,3 +6,53 @@ layout: default
 ---
 
 {% include header.html %}
+
+
+<div class="mapouter">
+  <div class="gmap_canvas">
+    <iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=16619%20Vashon%20Hwy%20SW%2C%20Vashon%2C%20WA%2098070&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  </div>
+  <style>.mapouter{text-align:right;height:200px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:100%;}</style>
+</div>
+
+
+<div id="contact" class="measure-wide center">
+  <div class="cf">
+    <div class="fl w-50">
+    <p><strong><a href="{{site.mailto_url}}">{{site.mailto}}</a></strong></p>
+    </div>
+    <div class="fl w-50">
+      <p><strong><a href="tel:{{site.phone_url}}">{{site.phone}}</a></strong></p>
+    </div>
+  </div>
+  <div class="cf">
+    {% capture inputClassNames %}pa2 f4 tc input-reset ba bg-transparent w-100{% endcapture %}
+    <form id="contact-form" method="POST" action="https://formspree.io/leeann@safesecuremoney.com">
+      <div>
+        <label class="db fw4 lh-copy f5" for="email">Your Email(optional)</label>
+        <input class="{{inputClassNames}}"
+          type="email" name="email" id="email"
+          autocomplete="email" placeholder="elon@tesla.com(only if you want a response)">
+      </div>
+
+      <div>
+        <label class="db fw4 lh-copy f5" for="phone">Your Phone</label>
+        <input class="{{inputClassNames}}"
+          type="tel" name="phone" id="phone"
+          autocomplete="phone" placeholder="206-123-4567">
+      </div>
+
+      <div class="mt3">
+        <label class="db fw4 lh-copy f5" for="message">Your Message</label>
+        <textarea class="{{inputClassNames}} tl tl-ns" name="message" required placeholder="Your Message"></textarea>
+      </div>
+
+      <div class="mt3">
+        <input
+          class="f6 f5-l button-reset pv3 w-100  tc bn bg-animate bg-black hover-bg-black-70 white pointer w-100"
+          type="submit" value="Send Message">
+      </div>
+    </form>
+  </div>
+  <hr class="mv5">
+</div>
