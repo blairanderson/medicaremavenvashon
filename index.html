@@ -19,10 +19,14 @@ layout: default
 <div id="contact" class="measure-wide center">
   <div class="cf">
     <div class="fl w-50">
-    <p class="tc"><a class="b fw1" href="{{site.mailto_url}}">{{site.mailto}}</a></p>
+    <p class="tc">
+      <label for="email"></label>
+      <a class="b fw1" id="email" href="{{site.mailto_url}}">{{site.mailto}}</a></p>
     </div>
     <div class="fl w-50">
-      <p class="tc"><a class="b fw1" href="tel:{{site.phone_url}}">{{site.phone}}</a></p>
+      <p class="tc">
+        <label for="phone"></label>
+        <a class="b fw1" id="phone" href="tel:{{site.phone_url}}">{{site.phone}}</a></p>
     </div>
   </div>
   <div class="cf">
