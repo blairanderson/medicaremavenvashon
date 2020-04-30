@@ -7,56 +7,113 @@ layout: default
 
 {% include header.html %}
 
-
-<div class="mapouter">
-  <div class="gmap_canvas">
-    <iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=16619%20Vashon%20Hwy%20SW%2C%20Vashon%2C%20WA%2098070&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+<div class="cf mt3">
+  <div class="fl-ns w-50-ns pr2-ns">
+    <img src="img/leeann-brown-vashon-medicare.jpg" alt="" />
   </div>
-  <style>.mapouter{text-align:right;height:200px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:100%;}</style>
-</div>
-
-
-<div id="contact" class="measure-wide center">
-  <div class="cf">
-    <div class="fl w-50">
-    <p class="tc">
-      <label for="email"></label>
-      <a class="b fw1" id="email" href="{{site.mailto_url}}">{{site.mailto}}</a></p>
+  <div class="mt3 mt0-ns fl-ns w-50-ns pl2-ns">
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe
+          width="100%"
+          height="200"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?q=16619%20Vashon%20Hwy%20SW%2C%20Vashon%2C%20WA%2098070&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
+      </div>
+      <style>
+        .mapouter {
+          text-align: right;
+          height: 200px;
+          width: 100%;
+        }
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          height: 200px;
+          width: 100%;
+        }
+      </style>
     </div>
-    <div class="fl w-50">
-      <p class="tc">
-        <label for="phone"></label>
-        <a class="b fw1" id="phone" href="tel:{{site.phone_url}}">{{site.phone}}</a></p>
+
+    <div id="contact" class="measure-wide-ns center">
+      <div class="cf">
+        <div class="fl-ns w-50-ns">
+          <p class="tc">
+            <label for="email"></label>
+            <a class="b fw1" id="email" href="{{site.mailto_url}}"
+              >{{site.mailto}}</a
+            >
+          </p>
+        </div>
+        <div class="fl-ns w-50-ns">
+          <p class="tc">
+            <label for="phone"></label>
+            <a class="b fw1" id="phone" href="tel:{{site.phone_url}}"
+              >{{site.phone}}</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="cf">
+        {% capture inputClassNames %}pa2 f4 tc input-reset ba bg-transparent
+        w-100{% endcapture %}
+        <form
+          class="measure-wide ph3"
+          id="contact-form"
+          method="POST"
+          action="https://formspree.io/leeann@safesecuremoney.com"
+        >
+          <div>
+            <label class="db fw4 lh-copy f5" for="email"
+              >Your Email(optional)</label
+            >
+            <input
+              class="{{inputClassNames}}"
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              placeholder="Your Email Here"
+            />
+          </div>
+
+          <div>
+            <label class="db fw4 lh-copy f5" for="phone">Your Phone</label>
+            <input
+              class="{{inputClassNames}}"
+              type="tel"
+              name="phone"
+              id="phone"
+              autocomplete="phone"
+              placeholder="Your Phone Here"
+            />
+          </div>
+
+          <div class="mt3">
+            <label class="db fw4 lh-copy f5" for="message">Your Message</label>
+            <textarea
+              class="{{inputClassNames}} tl tl-ns"
+              name="message"
+              required
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+
+          <div class="mt3">
+            <input
+              class="f6 f5-l button-reset pv3 w-100  tc bn bg-animate bg-black hover-bg-black-70 white pointer w-100"
+              type="submit"
+              value="Send Message"
+            />
+          </div>
+        </form>
+      </div>
+      <hr class="mv5" />
     </div>
   </div>
-  <div class="cf">
-    {% capture inputClassNames %}pa2 f4 tc input-reset ba bg-transparent w-100{% endcapture %}
-    <form id="contact-form" method="POST" action="https://formspree.io/leeann@safesecuremoney.com">
-      <div>
-        <label class="db fw4 lh-copy f5" for="email">Your Email(optional)</label>
-        <input class="{{inputClassNames}}"
-          type="email" name="email" id="email"
-          autocomplete="email" placeholder="elon@tesla.com(only if you want a response)">
-      </div>
-
-      <div>
-        <label class="db fw4 lh-copy f5" for="phone">Your Phone</label>
-        <input class="{{inputClassNames}}"
-          type="tel" name="phone" id="phone"
-          autocomplete="phone" placeholder="206-123-4567">
-      </div>
-
-      <div class="mt3">
-        <label class="db fw4 lh-copy f5" for="message">Your Message</label>
-        <textarea class="{{inputClassNames}} tl tl-ns" name="message" required placeholder="Your Message"></textarea>
-      </div>
-
-      <div class="mt3">
-        <input
-          class="f6 f5-l button-reset pv3 w-100  tc bn bg-animate bg-black hover-bg-black-70 white pointer w-100"
-          type="submit" value="Send Message">
-      </div>
-    </form>
-  </div>
-  <hr class="mv5">
 </div>
