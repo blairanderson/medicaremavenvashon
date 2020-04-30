@@ -1,0 +1,7 @@
+[build]
+  command = "jekyll build"
+  publish = "_site"
+  functions = ".netlify/functions/"
+
+[build.environment]
+  JEKYLL_ENV = "production"
