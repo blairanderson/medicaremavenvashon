@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # we want to look like this http://www.kenwilliamschfc.com/
 # in the templates via {{ site.myvariable }}.
-title: Medicare Maven Vashon
+title: Vashon Medicare Insurance | Vashon Medicare Maven
 brand_name: MedicareMavenVashon
 header:
   title: Vashon Island Medicare Maven
