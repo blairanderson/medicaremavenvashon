@@ -20,11 +20,11 @@ header:
   title: Vashon Island Medicare Maven
   subtitle: Medicare Supplemental Insurance made Simple!
 mailto: "leeann@safesecuremoney.com"
-mailto_url: "mailto:leeann@safesecuremoney.com?subject=Seeking+MedicareMavenVashon"
+mailto_url: "mailto:leeann@vashonmedicaremaven.com?subject=Seeking+Vashon+Medicare+Maven"
 phone: "(206) 567-4600"
 phone_url: "tel:+12065674600"
 description: > # a simple web app launch site built using tachyons
-url: "https://www.medicaremavenvashon.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.vashonmedicaremaven.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 social-icons:
   - title: Facebook
